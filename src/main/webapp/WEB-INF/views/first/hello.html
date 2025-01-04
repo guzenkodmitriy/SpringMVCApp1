@@ -1,11 +1,16 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
 <head>
     <meta charset="UTF-8">
     <title>Hello</title>
 </head>
 <body>
   <div>Hello</div>
-  <a href="/first/goodbye">Say goodbye</a> or <a href="/exit">Exit</a>
+  <a href="/first/goodbye">Say goodbye</a>
+    or
+  <a href="/exit">Exit</a>
+    or
+  <a href="/first/hello?name=Tomas&surname=Jonsonyuk">Request with parameters</a>
+  <p th:text="${message}"/>
 </body>
 </html>
